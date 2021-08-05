@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="app">
+        <h1 class="title">Currency Converter</h1>
+        <form id='form'>
+            <input placeholder='Enter the amount ...' id='form-type' type='number' value=''/>
+            <select class='form-select1'>
+            </select>
+            <input placeholder='Score ...' id='form-score' value='' disabled>
+            <select class='form-select2'>
+            </select>
+            <button id='form-btn' type='submit'>Check</button>
+        </form>
+        <div class="total-score"></div>
+        <div class="currencies">
+            <h3 class="currencies-title">Other Currencies (Equal 1 PLN)</h3>
+            <div class="currencies-table">
+
+                <img src="img/europe2.png" class="currencies-flag">
+                <p class="currencies-country">EUR</p>
+                <div class="currencies-value eur"></div>
+                <div class="currencies-date eur"></div>
+
+                <img src="img/switzerland1.png" class="currencies-flag">
+                <p class="currencies-country">CHY</p>
+                <div class="currencies-value chf"></div>
+                <div class="currencies-date chf"></div>
+
+                <img src="img/united-kingdom.png" class="currencies-flag">
+                <p class="currencies-country">GBP</p>
+                <div class="currencies-value gbp"></div>
+                <div class="currencies-date gbp"></div>
+
+                <img src="img/jp.gif" class="currencies-flag">
+                <p class="currencies-country">JPY</p>
+                <div class="currencies-value jpy"></div>
+                <div class="currencies-date jpy"></div>
+
+                <img src="img/usa.png" class="currencies-flag">
+                <p class="currencies-country">USD</p>
+                <div class="currencies-value usd"></div>
+                <div class="currencies-date usd"></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

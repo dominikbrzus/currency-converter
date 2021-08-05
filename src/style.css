@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+}
+
+button {
+    display: block;
+}
+
+select, button {
+    cursor: pointer;
+}
+
+.app {
+    margin: 80px 8px;
+    padding: 20px 0 0;
+    background-color: rgb(250, 249, 249);
+    border: 1px solid rgb(233, 233, 233);
+    box-shadow: 1px 1px 1px rgb(233, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+}
+
+.title {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+    padding: 0 3px;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    width: 100%;
+    margin: 20px 5px;
+}
+
+#form-type, #form-score, .form-select1, .form-select2, #form-btn {
+    padding: 13px 18px;
+    border: 1px solid rgba(203, 197, 255, 0.349);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 3px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+input[type="number"] {
+   -moz-appearance: textfield;
+}
+
+#form-type:hover, .form-select1:hover, .form-select2:hover {
+    transition: background-color .5s;
+}
+
+#form-type:hover, .form-select1:hover, .form-select2:hover {
+    background-color: rgb(248, 248, 248);
+}
+
+#form-type:focus {
+    outline: 1px solid rgb(199, 195, 195);
+}
+
+#form-btn {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-transform: uppercase;
+    width: 300px;
+    max-width: 100%;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    transition: background-color .5s, color .5s border .5s;
+}
+
+#form-btn:hover {
+    background-color: white;
+    color: rgb(20, 20, 20);
+    border: 1px solid rgb(15, 15, 15);
+}
+
+option {
+    font-size: 15px;
+}
+
+.total-score-answer {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin: 5px 0 20px;
+    animation: total-score-anim;
+    animation-duration: .7s;
+}
+
+.currencies {
+    padding: 25px;
+    background-color: white;
+    width: 100%;
+}
+
+.currencies-title {
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.currencies-table {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 12px;
+align-items: center;
+justify-items: center;
+padding: 0 2px;
+}
+
+.currencies-flag {
+    width: 50px;
+    height: auto;
+}
+
+.currencies-value {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.currencies-date {
+    text-align: center;
+    color: rgb(167, 165, 165);
+}
+
+@keyframes total-score-anim {
+    from {
+        transform: translate(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app {
+        margin: 15px 8px;
+    }
+    .title {
+        font-size: 2rem;
+    }
+
+    #form-type, #form-score, .form-select1, .form-select2 {
+        width: 90%;
+    }
+}
